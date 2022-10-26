@@ -1,0 +1,34 @@
+{
+  "name": "monorepo-lambdas-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api:local": "npx sls offline -s dev",
+    "api:package": "npx sls package",
+    "api:teste-package": "serverless package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuizEduardoBilotta/monorepo-lambdas-poc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuizEduardoBilotta/monorepo-lambdas-poc/issues"
+  },
+  "homepage": "https://github.com/LuizEduardoBilotta/monorepo-lambdas-poc#readme",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "serverless-esbuild": "^1.33.0",
+    "serverless-offline": "^11.1.3"
+  }
+}

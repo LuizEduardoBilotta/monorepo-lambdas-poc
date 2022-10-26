@@ -1,0 +1,28 @@
+service: "monorepo-lambdas-poc"
+
+plugins:
+  - serverless-offline
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+  # function Sum
+functions:
+  sum:
+    handler: src/functions/sum/index.handler
+    events:
+      - http:
+          method: POST
+          path: sum/
+
+  # Function subtraction
+  subtraction:
+    handler: src/functions/subtraction/index.handler
+    events:
+      - http:
+          method: POST
+          path: subtraction/
